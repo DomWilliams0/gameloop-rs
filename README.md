@@ -1,7 +1,7 @@
 # gameloop-rs
 
 ![Build Status](https://github.com/DomWilliams0/gameloop-rs/workflows/Rust/badge.svg)
-[![Documentation](https://docs.rs/gameloop-rs/badge.svg)](https://docs.rs/gameloop)
+[![Documentation](https://docs.rs/gameloop/badge.svg)](https://docs.rs/gameloop)
 [![Version](https://img.shields.io/crates/v/gameloop)](https://crates.io/crates/gameloop)
 [![License](https://img.shields.io/crates/l/gameloop)](https://github.com/DomWilliams0/gameloop-rs/blob/master/LICENSE)
 
