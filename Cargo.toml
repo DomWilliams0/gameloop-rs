@@ -1,12 +1,12 @@
 [package]
 name = "gameloop"
 description = "deWiTTERS game loop."
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dom Williams <me@domwillia.ms>"]
 edition = "2018"
 repository = "https://github.com/DomWilliams0/gameloop-rs"
 homepage = "https://github.com/DomWilliams0/gameloop-rs"
-license-file = "LICENSE"
+license = "GPL-3.0"
 readme = "README.md"
 keywords = ["gamedev", "gameloop", "dewitters", "timestep", "interpolation"]
 categories = ["game-development", "game-engines", "games"]
