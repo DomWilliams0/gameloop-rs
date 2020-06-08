@@ -1,0 +1,9 @@
+[package]
+name = "gameloop"
+version = "0.1.0"
+authors = ["Dom Williams <contact@domwillia.ms>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+thiserror = "1.0"
