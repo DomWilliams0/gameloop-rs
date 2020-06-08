@@ -27,4 +27,4 @@
 
 mod gameloop;
 
-pub use self::gameloop::{GameLoop, GameLoopError, FrameAction, FrameActions};
+pub use self::gameloop::{FrameAction, FrameActions, GameLoop, GameLoopError};

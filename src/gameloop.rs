@@ -1,7 +1,7 @@
-
 use std::cell::Cell;
+use std::error::Error;
+use std::fmt::{Display, Formatter};
 use std::time::Instant;
-use thiserror::Error;
 
 use log::debug;
 
@@ -46,11 +46,9 @@ pub struct GameLoop {
 }
 
 /// Errors possible when initializing `GameLoop`.
-#[derive(Error, Debug)]
+#[derive(Debug)]
 pub enum GameLoopError {
-    #[error("Ticks per second must be >= 1")]
     BadTps,
-    #[error("Max frame skip must be >= 1")]
     BadFrameSkip,
 }
 
@@ -215,3 +213,14 @@ impl<'a> Iterator for FrameActions<'a> {
         None
     }
 }
+
+impl Display for GameLoopError {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            GameLoopError::BadTps => write!(f, "Ticks per second must be >= 1"),
+            GameLoopError::BadFrameSkip => write!(f, "Max frame skip must be >= 1"),
+        }
+    }
+}
+
+impl Error for GameLoopError {}
